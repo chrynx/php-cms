@@ -8,7 +8,7 @@ $db['db_password'] = 'very-hard-password';
 foreach($db as $key => $value){
     define(strtoupper($key), $value);
 }
-
+echo DB_HOST;
 try {
     $DB = new PDO("mysql:host=DB_HOST;dbname=DB_NAME",DB_USERNAME,DB_PASSWORD);
 } catch(PDOException $e) {
